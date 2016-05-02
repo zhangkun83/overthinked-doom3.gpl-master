@@ -57,7 +57,7 @@ BUILD_ROOT (default 'build')
 TARGET_GAME (default 1)
 	Build the base game code
 
-TARGET_D3XP (default 1)
+TARGET_D3XP (default 0)
 	Build the d3xp game code
 
 BUILD_GAMEPAK (default 0)
@@ -270,7 +270,7 @@ BASECPPFLAGS = [ ]
 CORECPPPATH = [ ]
 CORELIBPATH = [ ]
 CORECPPFLAGS = [ ]
-GAMECPPFLAGS = [ ]
+GAMECPPFLAGS = [ '-D_DENTONMOD', '-D_PORTALSKY' ]
 BASELINKFLAGS = [ ]
 CORELINKFLAGS = [ ]
 

@@ -86,6 +86,8 @@ if ( local_d3xp ):
 	physics/Force_Grab.cpp'
 	game_list = scons_utils.BuildList( 'd3xp', game_string )
 else:
+        game_string += ' \
+        tracer.cpp'
 	game_list = scons_utils.BuildList( 'game', game_string )
 
 for i in range( len( game_list ) ):
